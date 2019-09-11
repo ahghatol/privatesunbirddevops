@@ -41,5 +41,5 @@ neo4j_enterprise: "false"
 ## backup
 backup_azure_storage_account_name: sunbirdcloud
 ### overriding backup secret
-backup_azure_storage_access_key: "{{lp_vault_backup_azure_storage_secret}}"
+backup_azure_storage_access_key: KFmEHf15wSKd474iiIFTlfiQuH3ZkrOKtDWSbbpJOAdWg/VJOi1yLjgnruBzdWmUu15FIRIokPwy4uMNl+BaSA== # "{{lp_vault_backup_azure_storage_secret}}"
 
