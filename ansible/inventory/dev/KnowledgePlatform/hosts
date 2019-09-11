@@ -22,7 +22,7 @@ search1
 redis1
 
 [learning-neo4j-node1]
-34.93.12.106
+34.87.54.219
 
 # Enable following host, if you're have neo4j cluster and an arbiter for election
 # [arbiter]
@@ -35,7 +35,7 @@ learning-neo4j-node1
 34.93.76.196
 
 [dp-cassandra]
-34.93.12.106
+34.87.54.219
 
 [core-cassandra]
 34.93.76.196
