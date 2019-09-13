@@ -18,13 +18,13 @@
 34.93.129.104
 
 [composite-search-cluster]
-34.87.54.219
+35.240.152.90
 
 [lp-cassandra]
-34.87.54.219
+35.240.152.90
 
 [dp-cassandra]
-34.87.54.219
+35.240.152.90
 
 [lp-redis]
 34.93.129.104
@@ -68,8 +68,7 @@ cassandra
 #15.0.3.7
 
 [telemetry-search-cluster1]
-15.0.2.6
-
+35.240.152.90
 
 [telemetry-search-cluster:children]
 telemetry-search-cluster1
