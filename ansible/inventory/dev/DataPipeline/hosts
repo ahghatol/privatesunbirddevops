@@ -9,6 +9,11 @@
 [core-cassandra]
 34.93.76.196
 
+[core-es-1]
+34.87.79.145    # This should be elasticsearch master IP of Core
+
+[core-es:children]
+core-es-1
 
 ################# LP ##########################
 [search]

@@ -16,7 +16,7 @@ sunbird_default_channel: sunbird              # Organization channel name which 
 sunbird_app_name: Sunbird                       # By default app name will be sunbird
 azure_account_name: sunbirdcloud                   # Storage account name for blobs
 sunbird_content_azure_storage_container: sunbirdcloud # Conatainer store assets/public
-swarm_load_balancer: 34.93.129.104 # Loadbalancer ip to push the logspout result to logstash in swarm
+swarm_load_balancer: 34.93.129.104  # Loadbalancer ip to push the logspout result to logstash in swarm
 
 artifacts_container: 'artifacts'                  # Azure blob container name to save built artifacts
 
