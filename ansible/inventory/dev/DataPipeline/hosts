@@ -4,7 +4,7 @@
 
 # Sunbird zookeeper
 [ingestion-cluster-zookeepers]
-15.0.0.8
+35.201.137.241
 
 [core-cassandra]
 34.93.76.196
@@ -121,7 +121,7 @@ ansible_ssh_private_key_file=/var/lib/jenkins/secrets/deployer_ssh_key
 34.93.32.185
 
 [logstash-ps]
-10.160.0.8
+34.93.129.104
 
 [es-ps]
 35.240.152.90
