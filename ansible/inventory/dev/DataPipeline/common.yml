@@ -1,12 +1,12 @@
 ############## Common ######################
 
 # Common vars for env
-env:dev
-proto:http
-domain_name:sunbird-cloud.tekdi.net
-ssh_public_key_deployer:"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGrZGVHzGbYb6TtyXiyFo+/+cNLJvoe9DHMxh0QmOd40V6FKltk44cbXuqOmltAjM5iAMdoyZQ7sf5nPNi8Cw0OcKrc3j4VuSE3eVIMGVkiNL7mqGs3FxmF2eYsON87qaWWZcLocNDfwEgC+e+XUnQKSGzz4T4rjFUlIj88HsjdW3xLVq0yC/i3NS2LaCJjHhubnKFe6qElFc4pbD/CsQxFYSNUekk1/EUEXCIBMe1rdVb0hfNNl4SksUhcR/9N+TfILU0z4KmixiRg2zM8kXoixq1F5PbtvGhSC6boAVhD0SgebuwtuWH0XXMWYoex6sJl2yjSxN3ld9Y7CprWIKr ttpllt@vowellt1"
+env: dev
+proto: http
+domain_name: sunbird-cloud.tekdi.net
+ssh_public_key_deployer: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGrZGVHzGbYb6TtyXiyFo+/+cNLJvoe9DHMxh0QmOd40V6FKltk44cbXuqOmltAjM5iAMdoyZQ7sf5nPNi8Cw0OcKrc3j4VuSE3eVIMGVkiNL7mqGs3FxmF2eYsON87qaWWZcLocNDfwEgC+e+XUnQKSGzz4T4rjFUlIj88HsjdW3xLVq0yC/i3NS2LaCJjHhubnKFe6qElFc4pbD/CsQxFYSNUekk1/EUEXCIBMe1rdVb0hfNNl4SksUhcR/9N+TfILU0z4KmixiRg2zM8kXoixq1F5PbtvGhSC6boAVhD0SgebuwtuWH0XXMWYoex6sJl2yjSxN3ld9Y7CprWIKr ttpllt@vowellt1"
 bootstrap_user: vaishali_k
-bootstrap_key_path:/var/lib/jenkins/secrets/ops_ssh_key
+bootstrap_key_path: /var/lib/jenkins/secrets/ops_ssh_key
 
 #################### DP ##########################
 
