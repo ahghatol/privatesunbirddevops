@@ -82,6 +82,15 @@ postgresql-master
 [kafka:children]
 kafka-1
 
+[processing-cluster-zookeepers]
+35.201.137.241             # Zookeeper IP of processing cluster in Data pipeline
+
+[zookeeper:children]
+processing-cluster-zookeepers
+
+[lp-redis]
+34.93.129.104
+
 [local]
 localhost
 
