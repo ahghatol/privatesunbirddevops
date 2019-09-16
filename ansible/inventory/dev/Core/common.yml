@@ -1,6 +1,7 @@
 ##########################################
 # Starting Of Core VARS
 env: dev                #Name of the environment, e.g. dev, staging or production.
+env_name: "{{ env }}"
 domain_name: sbcloud.tekdi.net           #Domain on which the portal will be accessed. e.g. staging.{implementation-name}.org
 proto: http                 # Protocol
 bootstrap_user: vaishali_k
