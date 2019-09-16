@@ -10,7 +10,7 @@
 swarm-manager-1
 
 [keycloak-1]
-34.93.76.196
+34.87.15.95
 
 [keycloak:children]
 keycloak-1
@@ -49,19 +49,19 @@ log-es-1
 es-1
 
 [cassandra-1]
-34.93.76.196
+34.87.15.95
 
 [cassandra:children]
 cassandra-1
 
 [postgresql-master-1]
-34.93.76.196
+34.87.15.95
 
 [postgresql-master:children]
 postgresql-master-1
 
 [postgresql-slave-1]
-34.93.76.196
+34.87.15.95
 
 [postgresql-slave:children]
 postgresql-slave-1
