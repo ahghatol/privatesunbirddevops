@@ -19,6 +19,7 @@ azure_account_name: sunbirdcloud                   # Storage account name for bl
 sunbird_content_azure_storage_container: sunbirdcloud # Conatainer store assets/public
 swarm_load_balancer: 34.93.129.104  # Loadbalancer ip to push the logspout result to logstash in swarm
 
+dp_azure_account_name: sunbirdcloud # azure storage account name
 artifacts_container: 'artifacts'                  # Azure blob container name to save built artifacts
 
 ## Mail config
