@@ -76,7 +76,7 @@ log-es-1
 es-1
 
 [cassandra-1]
-10.148.0.5
+ 34.87.15.95
 
 [cassandra:children]
 cassandra-1
