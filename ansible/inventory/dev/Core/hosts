@@ -7,7 +7,7 @@
 swarm-manager-1
 
 [swarm-manager-1]
-34.93.169.13 swarm_master=true
+10.148.0.8 swarm_master=true
 
 # This host will make sure prometheus for all stateful services
 # will run on a single node, as it has storage dependancy
@@ -19,19 +19,19 @@ swarm-agent-for-prometheus
 swarm-manager-1
 
 [keycloak-1]
-34.87.15.95
+10.128.0.7
 
 [keycloak:children]
 keycloak-1
 
 [log-es-1]
-34.93.169.13 node_name=refactor-log-es-1 es_etc_node_master=true es_etc_node_data=true
+10.148.0.8 node_name=refactor-log-es-1 es_etc_node_master=true es_etc_node_data=true
 
 [log-es:children]
 log-es-1
 
 [swarm-agent-for-prometheus-1]
-34.93.169.13
+10.148.0.8
 
 [swarm-agent-for-prometheus:children]
 swarm-agent-for-prometheus-1
@@ -39,20 +39,14 @@ swarm-agent-for-prometheus-1
 [swarm-agent-for-prometheus-stateful:children]
 swarm-agent-for-prometheus
 
-[swarm-agent-for-grafana-1]
-34.93.169.13
-
-[swarm-agent-for-grafana:children]
-swarm-agent-for-grafana-1
-
 [swarm-dashboard-1]
-34.93.169.13
+10.148.0.8
 
 [swarm-dashboard:children]
 swarm-dashboard-1
 
 [swarm-agent-dashboard-1]
-34.93.169.13
+10.148.0.8
 
 [swarm-agent-dashboard:children]
 swarm-agent-dashboard-1
@@ -61,10 +55,10 @@ swarm-agent-dashboard-1
 swarm-agent-dashboard
 
 [swarm-agent-for-alertmanager-1]
-34.93.169.13
+10.148.0.8
 
 [es-1]
-34.93.76.196 es_instance_name=es-1 es_etc_node_master=true es_etc_node_data=true
+10.128.0.7 es_instance_name=es-1 es_etc_node_master=true es_etc_node_data=true
 
 [es-backup:children]
 es-1
@@ -76,19 +70,19 @@ log-es-1
 es-1
 
 [cassandra-1]
-10.148.0.5
+10.128.0.7
 
 [cassandra:children]
 cassandra-1
 
 [postgresql-master-1]
-34.87.15.95
+10.128.0.7
 
 [postgresql-master:children]
 postgresql-master-1
 
 [postgresql-slave-1]
-34.87.15.95
+10.128.0.7
 
 [postgresql-slave:children]
 postgresql-slave-1
@@ -98,25 +92,25 @@ postgresql-slave
 postgresql-master
 
 [kafka-1]
-35.201.137.241 kafka_id=1
+10.128.0.8 kafka_id=1
 
 [processing-cluster-kafka]
-35.201.137.241
+10.128.0.8
 
 [telemetry-search-cluster]
-35.201.137.241
+10.128.0.8
 
 [kafka:children]
 kafka-1
 
 [processing-cluster-zookeepers]
-35.201.137.241             # Zookeeper IP of processing cluster in Data pipeline
+10.128.0.8             # Zookeeper IP of processing cluster in Data pipeline
 
 [zookeeper:children]
 processing-cluster-zookeepers
 
 [lp-redis]
-34.93.129.104
+10.128.0.9             # Redis master IP of Knowledge platform
 
 [local]
 localhost
