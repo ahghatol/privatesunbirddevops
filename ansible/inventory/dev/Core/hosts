@@ -4,6 +4,7 @@
 # By default this value can be swarm-manager-1 or 2 or n; but for a single
 # cluster it should be one value.
 # If you have multiple cluster you can list all ips below one by one
+
 swarm-manager-1
 
 [swarm-manager-1]
@@ -35,6 +36,12 @@ log-es-1
 
 [swarm-agent-for-prometheus:children]
 swarm-agent-for-prometheus-1
+
+[swarm-agent-for-grafana-1]
+10.148.0.8
+
+[swarm-agent-for-grafana:children]
+swarm-agent-for-grafana-1
 
 [swarm-agent-for-prometheus-stateful:children]
 swarm-agent-for-prometheus
