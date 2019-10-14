@@ -1,28 +1,28 @@
 ######################## LP ########################
 
 [learning1]
-10.160.0.8
+10.128.0.10
 
 [swarm-bootstrap-manager]
-10.160.0.5
+10.128.0.11
 
 [learningall:children]
 learning1
 
 [search1]
-10.160.0.8
+10.128.0.10
 
 [searchall:children]
 search1
 
 [redis1]
-10.160.0.8
+10.128.0.10
 
 [redisall:children]
 redis1
 
 [learning-neo4j-node1]
-10.148.0.2
+10.128.0.12
 
 # Enable following host, if you're have neo4j cluster and an arbiter for election
 # [arbiter]
@@ -32,33 +32,33 @@ redis1
 learning-neo4j-node1
 
 [cassandra]
-10.160.0.6
+10.128.0.12
 
 [dp-cassandra]
-10.148.0.2
+10.128.0.12
 
 [core-cassandra]
-10.160.0.6
+10.128.0.13
 
 [composite-search-cluster]
-10.148.0.2
+10.128.0.12
 
 [yarn-master]
-10.160.0.10
+10.128.0.14
 
 [yarn-slave]
-10.160.0.10
-10.160.0.11
+10.128.0.14
+10.128.0.15
 
 [yarn:children]
 yarn-master
 yarn-slave
 
 [processing-cluster-kafka]
-10.140.0.3
+10.128.0.8
 
 [processing-cluster-zookeepers]
-10.140.0.3
+10.128.0.8
 
 [zookeeper:children]
 processing-cluster-zookeepers
@@ -88,14 +88,14 @@ ansible_ssh_private_key_file=/var/lib/jenkins/secrets/deployer_ssh_key
 
 ####################### Monitoring ########################
 [logstash-ps]
-10.160.0.8
+10.128.0.10
 
 [process-exporter:children]
 logstash-ps
 cassandra-ps
 
 [cassandra-ps]
-10.160.0.9
+10.128.0.12
 
 [process-exporter:vars]
 ansible_ssh_user=deployer
