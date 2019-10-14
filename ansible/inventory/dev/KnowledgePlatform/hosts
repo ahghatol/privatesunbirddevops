@@ -4,7 +4,7 @@
 10.160.0.8
 
 [swarm-bootstrap-manager]
-34.93.169.13
+10.160.0.5
 
 [learningall:children]
 learning1
@@ -22,7 +22,7 @@ search1
 redis1
 
 [learning-neo4j-node1]
-35.240.152.90
+10.148.0.2
 
 # Enable following host, if you're have neo4j cluster and an arbiter for election
 # [arbiter]
@@ -32,33 +32,33 @@ redis1
 learning-neo4j-node1
 
 [cassandra]
-34.93.76.196
+10.160.0.6
 
 [dp-cassandra]
-35.240.152.90
+10.148.0.2
 
 [core-cassandra]
-34.93.76.196
+10.160.0.6
 
 [composite-search-cluster]
-35.240.152.90
+10.148.0.2
 
 [yarn-master]
-34.93.106.37
+10.160.0.10
 
 [yarn-slave]
-34.93.32.185    #yarn master
-#15.0.3.13
+10.160.0.10
+10.160.0.11
 
 [yarn:children]
 yarn-master
 yarn-slave
 
 [processing-cluster-kafka]
-35.201.137.241
+10.140.0.3
 
 [processing-cluster-zookeepers]
-35.201.137.241
+10.140.0.3
 
 [zookeeper:children]
 processing-cluster-zookeepers
@@ -95,7 +95,7 @@ logstash-ps
 cassandra-ps
 
 [cassandra-ps]
-34.93.119.26
+10.160.0.9
 
 [process-exporter:vars]
 ansible_ssh_user=deployer
